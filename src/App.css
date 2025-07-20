@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  background: linear-gradient(135deg, #e0f7fa, #fce4ec);
+  color: #333;
+  transition: all 0.3s ease;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.hero {
+  background: #6a11cb;
+  background: linear-gradient(to right, #2575fc, #6a11cb);
   color: white;
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  animation: fadeInDown 1s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.hero h1 {
+  margin: 0;
+  font-size: 2.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hero p {
+  margin: 10px 0 0;
+  font-size: 1.2rem;
+}
+
+.section {
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  animation: fadeInUp 1s ease;
+}
+
+.section h2 {
+  margin-top: 0;
+  color: #6a11cb;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.skill-list span {
+  background: #e1f5fe;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.card {
+  background: #f3e5f5;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 15px;
+}
+
+a {
+  color: #6a11cb;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #777;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
